@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "front-matter-markdown": "^0.4.5"
+  }
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "section": {
+      "title": "Week 1",
+      "description": "Intro to React Components and Props",
+      "weight": 10,
+      "section": true,
+      "skipSize": 100
+    },
+    "files": [
+      {
+        "title": "What is React.js? Get started with React using Vite",
+        "draft": false,
+        "weight": 10,
+        "assignment_types": [
+          "video"
+        ],
+        "skipSize": 122,
+        "fileName": "10_What is React.mdx",
+        "path": "week_1/10_What is React.mdx"
+      },
+      {
+        "title": "Creating Components in React",
+        "draft": false,
+        "weight": 20,
+        "assignment_types": [
+          "video"
+        ],
+        "skipSize": 101,
+        "fileName": "20_Creating Components in React.mdx",
+        "path": "week_1/20_Creating Components in React.mdx"
+      },
+      {
+        "title": "React Props Explained",
+        "draft": false,
+        "weight": 30,
+        "assignment_types": [
+          "video"
+        ],
+        "skipSize": 96,
+        "fileName": "30_React Props Explained.mdx",
+        "path": "week_1/30_React Props Explained.mdx"
+      },
+      {
+        "title": "Rendering a List of Components",
+        "draft": false,
+        "weight": 40,
+        "assignment_types": [
+          "video"
+        ],
+        "skipSize": 101,
+        "fileName": "40_Rendering lists.mdx",
+        "path": "week_1/40_Rendering lists.mdx"
+      }
+    ]
+  }
+]
