@@ -51,6 +51,17 @@
         "skipSize": 101,
         "fileName": "40_Rendering lists.mdx",
         "path": "week_1/40_Rendering lists.mdx"
+      },
+      {
+        "title": "Places",
+        "draft": false,
+        "weight": 100,
+        "assignment_types": [
+          "lab"
+        ],
+        "skipSize": 76,
+        "fileName": "100_Playlist Lab.mdx",
+        "path": "week_1/100_Playlist Lab.mdx"
       }
     ]
   }
