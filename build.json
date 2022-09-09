@@ -9,6 +9,17 @@
     },
     "files": [
       {
+        "title": "Class Notes",
+        "draft": false,
+        "weight": 1,
+        "assignment_types": [
+          "class_notes"
+        ],
+        "skipSize": 95,
+        "fileName": "01_classNotes.mdx",
+        "path": "week_1/01_classNotes.mdx"
+      },
+      {
         "title": "What is React.js? Get started with React using Vite",
         "draft": false,
         "weight": 10,

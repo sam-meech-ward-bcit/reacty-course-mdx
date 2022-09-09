@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "front-matter-markdown": "^0.4.5"
-  }
+  },
+  "name": "react_next_mdx",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "node ./scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sam-meech-ward-bcit/reacty-course-mdx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sam-meech-ward-bcit/reacty-course-mdx/issues"
+  },
+  "homepage": "https://github.com/sam-meech-ward-bcit/reacty-course-mdx#readme",
+  "description": ""
 }
