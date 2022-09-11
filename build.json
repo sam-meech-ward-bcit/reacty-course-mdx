@@ -9,6 +9,28 @@
     },
     "files": [
       {
+        "title": "Mood Tracker",
+        "draft": false,
+        "weight": 1000,
+        "assignment_types": [
+          "assignment"
+        ],
+        "skipSize": 90,
+        "fileName": "1000_Mood Tracker.mdx",
+        "path": "assignment_1/1000_Mood Tracker.mdx"
+      }
+    ]
+  },
+  {
+    "section": {
+      "title": "Week 1",
+      "description": "Intro to React Components and Props",
+      "weight": 10,
+      "section": true,
+      "skipSize": 100
+    },
+    "files": [
+      {
         "title": "Class Notes",
         "draft": false,
         "weight": 1,
@@ -73,17 +95,6 @@
         "skipSize": 76,
         "fileName": "100_Playlist Lab.mdx",
         "path": "week_1/100_Playlist Lab.mdx"
-      },
-      {
-        "title": "Mood Tracker",
-        "draft": false,
-        "weight": 1000,
-        "assignment_types": [
-          "assignment"
-        ],
-        "skipSize": 90,
-        "fileName": "1000_Mood Tracker.mdx",
-        "path": "week_1/1000_Mood Tracker.mdx"
       }
     ]
   }
