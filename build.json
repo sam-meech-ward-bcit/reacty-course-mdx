@@ -23,6 +23,28 @@
   },
   {
     "section": {
+      "title": "Course Details",
+      "description": "🤗",
+      "weight": 1,
+      "section": true,
+      "skipSize": 76
+    },
+    "files": [
+      {
+        "title": "Course Details",
+        "draft": false,
+        "weight": 10,
+        "assignment_types": [
+          "information"
+        ],
+        "skipSize": 91,
+        "fileName": "10_course_details.mdx",
+        "path": "course_details/10_course_details.mdx"
+      }
+    ]
+  },
+  {
+    "section": {
       "title": "Week 1",
       "description": "Intro to React Components and Props",
       "weight": 10,
@@ -93,8 +115,8 @@
           "lab"
         ],
         "skipSize": 76,
-        "fileName": "100_Playlist Lab.mdx",
-        "path": "week_1/100_Playlist Lab.mdx"
+        "fileName": "100_Places Lab.mdx",
+        "path": "week_1/100_Places Lab.mdx"
       }
     ]
   }
