@@ -1,6 +1,6 @@
 ---
-title: "Week 1"
-description: "Intro to React Components and Props"
-weight: 10
+title: "Assignment 1"
+description: "Mood Tracker"
+weight: 15
 section: true
 ---
