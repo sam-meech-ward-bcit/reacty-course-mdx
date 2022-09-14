@@ -119,5 +119,27 @@
         "path": "week_1/100_Places Lab.mdx"
       }
     ]
+  },
+  {
+    "section": {
+      "title": "Week 2",
+      "description": "React Events and State",
+      "weight": 20,
+      "section": true,
+      "skipSize": 87
+    },
+    "files": [
+      {
+        "title": "Event Listeners In React",
+        "draft": false,
+        "weight": 10,
+        "assignment_types": [
+          "video"
+        ],
+        "skipSize": 95,
+        "fileName": "10_Event Listeners.mdx",
+        "path": "week_2/10_Event Listeners.mdx"
+      }
+    ]
   }
 ]
