@@ -139,6 +139,39 @@
         "skipSize": 95,
         "fileName": "10_Event Listeners.mdx",
         "path": "week_2/10_Event Listeners.mdx"
+      },
+      {
+        "title": "useState Explained",
+        "draft": false,
+        "weight": 20,
+        "assignment_types": [
+          "video"
+        ],
+        "skipSize": 89,
+        "fileName": "20_use state explained copy.mdx",
+        "path": "week_2/20_use state explained copy.mdx"
+      },
+      {
+        "title": "Arrays and State",
+        "draft": false,
+        "weight": 30,
+        "assignment_types": [
+          "video"
+        ],
+        "skipSize": 87,
+        "fileName": "30_arrays and state.mdx",
+        "path": "week_2/30_arrays and state.mdx"
+      },
+      {
+        "title": "Conditionally Rendering Components",
+        "draft": false,
+        "weight": 40,
+        "assignment_types": [
+          "video"
+        ],
+        "skipSize": 105,
+        "fileName": "40_conditional render.mdx",
+        "path": "week_2/40_conditional render.mdx"
       }
     ]
   }
