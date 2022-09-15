@@ -47,11 +47,11 @@ for (let section of content) {
     
     sections.push({
       section: sectionIndexMeta,
-      files: files.sort((a, b) => a.weight - b.weight)
+      files: files.sort((a, b) => +a.weight - +b.weight)
     })
   }
 }
 
-sections = sections.sort((a, b) => a.weight - b.weight)
+sections = sections.sort((a, b) => +a.section.weight - +b.section.weight)
 
 fs.writeFileSync(path.resolve(__dirname, '../build.json'), JSON.stringify(sections, null, 2))

@@ -1,28 +1,6 @@
 [
   {
     "section": {
-      "title": "Assignment 1",
-      "description": "Mood Tracker",
-      "weight": 15,
-      "section": true,
-      "skipSize": 83
-    },
-    "files": [
-      {
-        "title": "Mood Tracker",
-        "draft": false,
-        "weight": 1000,
-        "assignment_types": [
-          "assignment"
-        ],
-        "skipSize": 90,
-        "fileName": "1000_Mood Tracker.mdx",
-        "path": "assignment_1/1000_Mood Tracker.mdx"
-      }
-    ]
-  },
-  {
-    "section": {
       "title": "Course Details",
       "description": "🤗",
       "weight": 1,
@@ -117,6 +95,28 @@
         "skipSize": 76,
         "fileName": "100_Places Lab.mdx",
         "path": "week_1/100_Places Lab.mdx"
+      }
+    ]
+  },
+  {
+    "section": {
+      "title": "Assignment 1",
+      "description": "Mood Tracker",
+      "weight": 15,
+      "section": true,
+      "skipSize": 83
+    },
+    "files": [
+      {
+        "title": "Mood Tracker",
+        "draft": false,
+        "weight": 1000,
+        "assignment_types": [
+          "assignment"
+        ],
+        "skipSize": 90,
+        "fileName": "1000_Mood Tracker.mdx",
+        "path": "assignment_1/1000_Mood Tracker.mdx"
       }
     ]
   },
