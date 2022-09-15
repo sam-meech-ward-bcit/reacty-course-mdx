@@ -1,0 +1,51 @@
+---
+title: 'Conditionally Rendering Components'
+draft: false
+weight: 40
+assignment_types: 
+  - video
+---
+
+<YouTube videoId="xRKvjWDZlW8" />
+
+
+[https://beta.reactjs.org/learn/conditional-rendering](https://beta.reactjs.org/learn/conditional-rendering)
+
+
+## 1 return
+
+```jsx
+if (whatever) {
+  return (jsx)
+} 
+return (jsx)
+```
+
+## 2 create variable
+
+```jsx
+let jsx = null
+if (whatever) {
+  jsx = something
+} 
+```
+
+## 3 &&
+
+```jsx
+const jsx = whatever && something
+```
+
+## 5 Inline
+
+```jsx
+{whatever && something}
+{whaver ? something : something}
+```
+
+## 4 ternary
+
+```jsx
+const jsx = whatever ? something : something
+```
+
