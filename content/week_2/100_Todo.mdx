@@ -1,0 +1,107 @@
+---
+title: 'Todo'
+draft: false
+weight: 100
+assignment_types: 
+  - lab
+---
+
+For this lab, we will be creating a simple todo list app (excuse the lack of css):
+
+
+http://comp3330-todos-1.s3-website.us-east-1.amazonaws.com/
+
+
+
+## Setup
+
+<Instruction>
+Use Vite to create a new React app called `Todos`.
+</Instruction>
+
+## Show Todos 20%
+
+<Instruction>
+Create an array of todos that will be stored in state in App.jsx. 
+</Instruction>
+
+Each todo should have an `id`, `title` and a `completed` property. The `completed` property should be a boolean that is `false` by default. Start by adding two or three default todos, we'll add more using a form later.
+
+**Example:**
+
+```jsx
+const [todos, setTodos] = useState([{
+  id: 1,
+  title: 'Learn React',
+  completed: false
+}, {
+  id: 2,
+  title: 'Learn Vue',
+  completed: false
+}, {
+  id: 3,
+  title: 'Learn Angular',
+  completed: false
+}])
+```
+
+<Instruction>
+Create a `Todo` component and use `map` to display all of the todos using this component. 
+</Instruction>
+
+This component doesn't need to manage state, it just needs to display the todo's title and completed status. 
+
+It will also need two buttons: one to mark the todo as completed and one to delete the todo.
+
+## Delete Todo 15%
+
+<Instruction>
+Implement the delete todo logic.
+</Instruction>
+
+When the delete button is clicked, the todo should be removed from the todos array. So App will need to pass a function to Todo that will remove the todo from the todos array.
+
+## Complete Todo 15%
+
+<Instruction>
+Implement the complete todo logic.
+</Instruction>
+
+When the complete button is clicked, the todo's `completed` property should be set to `true`. So App will need to pass a function to Todo that will update the todo's `completed` property.
+
+## Add Todo 20%
+
+
+<Instruction>
+Create a new component called `TodoForm` that will be a form with a single input and a submit button and display it at the top of the page.
+</Instruction>
+
+<Instruction>
+When a user submits the form, add the new todo to the todos array.
+</Instruction>
+
+The form should send the title of the todo to App. Since we don't have a natural way of generating unique ids, use `self.crypto.randomUUID()` to generate a unique id for the todo.
+
+```jsx
+const handleAddTodo = (title) => {
+  const newTodo = {
+    id: self.crypto.randomUUID(),
+    title,
+    completed: false
+  }
+
+  // ...
+}
+```
+
+## Show Form 15%
+
+<Instruction>
+Hide the form by default and show it when the user clicks a button.
+</Instruction>
+
+## useLocalStorage 15%
+
+<Instruction>
+Use a `useLocalStorage` hook instead of `useState` so that the todos get stored in the browswer
+</Instruction>

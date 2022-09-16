@@ -15,7 +15,7 @@
         "assignment_types": [
           "information"
         ],
-        "skipSize": 91,
+        "skipSize": 90,
         "fileName": "10_course_details.mdx",
         "path": "course_details/10_course_details.mdx"
       }
@@ -172,6 +172,17 @@
         "skipSize": 105,
         "fileName": "40_conditional render.mdx",
         "path": "week_2/40_conditional render.mdx"
+      },
+      {
+        "title": "Todo",
+        "draft": false,
+        "weight": 100,
+        "assignment_types": [
+          "lab"
+        ],
+        "skipSize": 74,
+        "fileName": "100_Todo.mdx",
+        "path": "week_2/100_Todo.mdx"
       }
     ]
   }
