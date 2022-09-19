@@ -97,3 +97,55 @@ Deploy your app to Railway.
 - Frontend works with backend and database 15%
 - Everything is deployed 15%
 
+---
+
+## Submission
+
+You will submit your code through github classroom repos. You will need two repos, one for your frontend and one for your backend. You should have already been tracking your changes using git, so you will already have a git history for both your frontend and backend repos. Follow these instructions to push your code to a new github repo:
+
+<Instruction>
+Accept the following github classroom link for the frontend:
+</Instruction>
+
+https://classroom.github.com/a/0l7hQnl0
+
+Make sure you copy the repo url and use it in the next step.
+
+<Instruction>
+From your frontend repo, run the following commands to merge your git history with the classroom repo and push your code:
+</Instruction>
+
+
+```sh
+git remote add classroom https://github.com/whatever-your-url-is-for-github-classroom # Add the classroom repo as a remote
+git fetch classroom # fetch the code from the classroom repo
+git config pull.rebase false # make sure you don't have rebase turned on
+git pull classroom main --allow-unrelated-histories # merge the code from the classroom repo
+git push classroom main # push all of your code to github classroom so i can see it
+```
+
+Then do pretty much the same for your backend repo:
+
+<Instruction>
+Accept the following github classroom link for the backend:
+</Instruction>
+
+https://classroom.github.com/a/jbTl6vXt
+
+Make sure you copy the repo url and use it in the next step.
+
+<Instruction>
+From your backend repo, run the following commands to merge your git history with the classroom repo and push your code:
+</Instruction>
+
+
+```sh
+git remote add classroom https://github.com/whatever-your-url-is-for-github-classroom # Add the classroom repo as a remote
+git fetch classroom # fetch the code from the classroom repo
+git config pull.rebase false # make sure you don't have rebase turned on
+git pull classroom (use `main` or `master` depending on how you setup your repo) --allow-unrelated-histories # merge the code from the classroom repo
+git push classroom (use `main` or `master` depending on how you setup your repo) # push all of your code to github classroom so i can see it
+```
+
+**After** you have pushed all of your code to github, send my your url in discord in the comp-3330 channel. `@saM` me and I will check your code and give you a grade.
+
