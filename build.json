@@ -188,13 +188,25 @@
   },
   {
     "section": {
-      "title": "Week 2",
-      "description": "React Events and State",
-      "weight": 20,
+      "title": "Week 3",
+      "description": "Side Effects and Networking",
+      "weight": 30,
       "section": true,
-      "skipSize": 87
+      "skipSize": 92
     },
-    "files": []
+    "files": [
+      {
+        "title": "Class Notes",
+        "draft": false,
+        "weight": 1,
+        "assignment_types": [
+          "class_notes"
+        ],
+        "skipSize": 87,
+        "fileName": "01_classNotes.mdx",
+        "path": "week_3/01_classNotes.mdx"
+      }
+    ]
   },
   {
     "section": {
