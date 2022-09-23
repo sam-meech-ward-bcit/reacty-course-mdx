@@ -188,6 +188,16 @@
   },
   {
     "section": {
+      "title": "Week 2",
+      "description": "React Events and State",
+      "weight": 20,
+      "section": true,
+      "skipSize": 87
+    },
+    "files": []
+  },
+  {
+    "section": {
       "title": "Assignment 2",
       "description": "Group Project",
       "weight": 35,
