@@ -185,5 +185,27 @@
         "path": "week_2/100_Todo.mdx"
       }
     ]
+  },
+  {
+    "section": {
+      "title": "Assignment 2",
+      "description": "Group Project",
+      "weight": 35,
+      "section": true,
+      "skipSize": 84
+    },
+    "files": [
+      {
+        "title": "Group Project Part 1 & 2",
+        "draft": false,
+        "weight": 1000,
+        "assignment_types": [
+          "assignment"
+        ],
+        "skipSize": 102,
+        "fileName": "1000_App.mdx",
+        "path": "assignment_2/1000_App.mdx"
+      }
+    ]
   }
 ]

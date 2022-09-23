@@ -1,0 +1,71 @@
+---
+title: 'Group Project Part 1 & 2'
+draft: false
+weight: 1000
+assignment_types: 
+  - assignment
+---
+
+# Group Project Part 1
+
+This assignment is due Nov 3rd at 11:59pm.
+
+## Overview
+
+For the rest of the assignments in this class, you will be building the web app that you have designed in your Design class. For this project you will be using:
+
+* Next
+* Storybook
+* Tailwind CSS
+* Prisma 
+* React Query (in a future assignment)
+* Next Auth (in a future assignment)
+* Socket.io (in a future assignment)
+
+In this assignment, you will be focusing on setting up the project and tooling, start creating components with storybook, and get the basic functionality working.
+
+
+<Instruction>
+  Use the following github classroom link to setup your teams and push your code.
+</Instruction>
+
+[https://classroom.github.com/a/kmMqADBC](https://classroom.github.com/a/kmMqADBC)
+
+This will be a single Next app repo. 
+
+## Requirements
+
+### Next App (50%)
+
+* Setup tailwind, storybook, and prisma correctly
+* Add a README.md explaining how to run the project in a dev environment
+* Use any suggested next features like `Link`, and `Image`
+* Follow next and react best practices
+
+### Storybook (50%)
+
+* Create a storybook story for each of your components that aren't pages. Each component should have it's own:
+  * Controls
+  * Actions
+  * Interactions
+
+There should be at least 10 components, but you can create as many as you like.
+
+### Database (50%)
+
+Use Prisma To:
+
+* Create a database schema
+* Create database migrations
+* Generate Prisma Client
+* Create a seed script
+
+Your database schema should follow best practices, so relational databases should be normalized and then denormalized for effeciency. NoSQL databases should be store their data based on your application's **access patterns**.
+
+### Server (50%)
+
+* Any AJAX requests should be made directly to the next server API that can make connections to the database.
+* Any data fetching that happens when the page initially loads should **NOT** go through the API. The page should connect directly to the database using `getStaticProps` or `getServerSideProps`.
+
+
+
