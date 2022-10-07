@@ -1,0 +1,259 @@
+---
+title: 'Next, Storybook, Tailwind'
+draft: false
+weight: 1000
+assignment_types: 
+  - assignment
+---
+
+
+## Create a next app
+
+```
+npx create-next-app <app-name>
+```
+
+Replace `<app-name>` with the name of your app. 
+
+`cd` into the app directory and run `npm run dev`  or `yarn dev` to start the development server.
+
+---
+
+## Storybook
+
+### Install storybook
+
+https://storybook.js.org/blog/get-started-with-storybook-and-next-js/
+
+<Instruction>
+Use the following command to install storybook
+</Instruction>
+
+```
+npx sb init --builder webpack5
+```
+
+<Instruction>
+Update the storybook scripts in package.json to serve the public directory:
+</Instruction>
+
+```
+"scripts": {
++    "storybook": "start-storybook -p 6006 -s ./public",
++    "build-storybook": "build-storybook -s public"
+}
+```
+
+### Next Images for Storybook
+
+https://storybook.js.org/addons/storybook-addon-next
+
+<Instruction>
+Install the `storybook-addon-next` addon
+</Instruction>
+
+```
+npm install storybook-addon-next
+```
+
+<Instruction>
+Register the Addon in `.storybook/main.js`
+</Instruction>
+
+
+```js
+module.exports = {
+  // other config ommited for brevity
+  addons: [
+    // ...
+    'storybook-addon-next'
+    // ...
+  ]
+}
+```
+
+### Global Styles
+
+<Instruction>
+Add the following to the top of `./storybook/preview.js` so that storybook knows about our global styles
+</Instruction>
+
+```js
+import "../styles/globals.css"
+````
+
+### Delete Default Stories
+
+<Instruction>
+Delete the `stories` directory and adjust the `stories` paths in `.storybook/main.js`:
+</Instruction>
+
+```js
+module.exports = {
+  stories: [
+    "../components/**/*.stories.mdx",
+    "../components/**/*.stories.@(js|jsx|ts|tsx)",
+    "../pages/**/*.stories.mdx",
+    "../pages/**/*.stories.@(js|jsx|ts|tsx)",
+  ],
+```
+
+### Components
+
+<Instruction>
+Create a `components` directory in the root of your project
+</Instruction>
+
+This is where you can store all components that aren't pages. Let's make a quick login form to see how this works.
+
+<Instruction>
+Create a `LoginForm` directory in the `components` directory that contains the following two files:
+</Instruction>
+
+* `index.jsx` - the component
+* `LoginForm.stories.js` - the story
+
+<Instruction>
+Add the following code to `index.js`
+</Instruction>
+
+```jsx
+import { useState } from "react"
+
+export default function LoginForm({ onLogin }) {
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    onLogin({ username, password })
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="email-address">
+        Username:
+      </label>
+      <input
+        id="email-address"
+        type="text"
+        value={username}
+        onChange={(event) => setUsername(event.target.value)}
+      />
+      <label htmlFor="password">
+        Password:
+      </label>
+      <input
+        id="password"
+        type="password"
+        value={password}
+        onChange={(event) => setPassword(event.target.value)}
+      />
+      <button type="submit">Login</button>
+    </form>
+  )
+}
+```
+
+This is just a super basic login form component that takes an `onLogin` prop that is called when the form is submitted. Now let's test this component. We have two options:
+
+1. Add the component to a page and test it there
+2. Create a story for the component and test it in storybook
+
+Try both ways and see what you prefer, here's how to do it in storybook:
+
+
+<Instruction>
+Add the following code to `LoginForm.stories.js`
+</Instruction>
+
+```jsx
+import LoginForm from "./index"
+
+// The default export metadata controls how Storybook lists your stories and provides information used by addons. 
+// https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+export default {
+  title: "LoginForm",
+  component: LoginForm,
+}
+
+// Any other named exports will be treated as stories, which should be functions that return your component
+export const Default = () => <LoginForm />
+```
+
+At a bare minimum, that's all we need. At least one named export, at least one story. 
+
+
+<Instruction>
+Run `npm run storybook` or `yarn storybook` to start storybook
+</Instruction>
+
+The styling is awful, we'll get to that in a minute, but there's our login form.
+
+### Actions
+
+Update the Login form story to use the `actions` addon:
+
+```js
+export default {
+  title: "LoginForm",
+  component: LoginForm,
+  argTypes: {
+    onLogin: { action: 'search' },
+  }
+}
+
+export const Default = (args) => <LoginForm {...args} />
+```
+
+Now when you click the login button, you'll see the action logged in the actions panel.
+
+## Tailwind
+
+<Instruction>
+Install tailwind using these instructions:
+</Instruction>
+
+https://tailwindcss.com/docs/guides/nextjs
+
+<Instruction>
+Update the login form to use tailwind classes:
+</Instruction>
+
+```jsx
+  return (
+    <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+      <div className="-space-y-px rounded-md shadow-sm">
+        <div>
+          <label htmlFor="email-address" className="sr-only">
+            Username:
+          </label>
+          <input
+            id="email-address"
+            placeholder="Email address"
+            className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+            type="text"
+            value={username}
+            onChange={(event) => setUsername(event.target.value)}
+          />
+          <label htmlFor="password" className="sr-only">
+            Password
+          </label>
+          <input
+            id="password"
+            placeholder="Password"
+            className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+
+            type="password"
+            value={password}
+            onChange={(event) => setPassword(event.target.value)}
+          />
+        </div>
+        <button
+          className="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+
+          type="submit">Login</button>
+      </div>
+    </form>
+  )
+```
