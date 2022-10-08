@@ -229,5 +229,38 @@
         "path": "assignment_2/1000_App.mdx"
       }
     ]
+  },
+  {
+    "section": {
+      "title": "Week 5",
+      "description": "Next",
+      "weight": 50,
+      "section": true,
+      "skipSize": 69
+    },
+    "files": [
+      {
+        "title": "Class Notes",
+        "draft": false,
+        "weight": 1,
+        "assignment_types": [
+          "class_notes"
+        ],
+        "skipSize": 87,
+        "fileName": "01_classNotes.mdx",
+        "path": "week_5/01_classNotes.mdx"
+      },
+      {
+        "title": "Next, Storybook, Tailwind",
+        "draft": false,
+        "weight": 1000,
+        "assignment_types": [
+          "assignment"
+        ],
+        "skipSize": 103,
+        "fileName": "1000_App.mdx",
+        "path": "week_5/1000_App.mdx"
+      }
+    ]
   }
 ]
