@@ -1,0 +1,48 @@
+---
+title: 'Next App Code Examples'
+draft: true
+weight: 3000
+assignment_types: 
+  - assignment
+---
+
+You're kind of just building this app. For now, just hard code a single user into the app. You will add user auth later.
+
+https://www.slipshods.com/
+
+This assignment is due Nov 10th at 11:59pm.
+
+## 1) Prisma
+
+Setup all of the models and relationships for the entities in the README file. 
+
+## 2) Create a post 
+
+* Add a button to the home page that says "Create a post" and takes you to a page where you can create a post.
+* When the user submits a post, it should send the data to the server and create a new post in the database.
+
+## 3) Get all posts on the home page
+
+When the user goes to the home page, it should fetch all of the posts from the database and display them on the page.
+
+We're going to assume that the posts are constantly changing and could take a while to load, so instead of doing SSR for the list of posts, do the following:
+
+* When the page loads, show a loading indicator
+* use `swr`, **or** `useEffect` to fetch the posts over an AJAX request and display them on the home page. 
+
+## 4) View a single post and comments
+
+When a user clicks on a single post, it should take them to a page that shows the post and all of the comments for that post.
+
+* use `getStaticProps` to load the post 
+* use `swr`, **or** `useEffect` to fetch the comments for the post. 
+
+## 5) Create a comment
+
+Allow a user to create a new comment on a post. This will increment the comment count for that post. 
+
+## 6) Like/Unlike post
+
+Allow a user to like and unlike a post. This will increment or decrement the like count for that post. 
+
+Clicking the like button will toggle the like on and off.
