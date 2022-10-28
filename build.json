@@ -262,5 +262,37 @@
         "path": "week_5/1000_App.mdx"
       }
     ]
+  },
+  {
+    "section": {
+      "title": "Week 9",
+      "description": "Next",
+      "weight": 90,
+      "section": true,
+      "skipSize": 69
+    },
+    "files": [
+      {
+        "title": "Class Notes",
+        "draft": false,
+        "weight": 1,
+        "assignment_types": [
+          "class_notes"
+        ],
+        "skipSize": 87,
+        "fileName": "01_classNotes.mdx",
+        "path": "week_9/01_classNotes.mdx"
+      }
+    ]
+  },
+  {
+    "section": {
+      "title": "Assignment 3",
+      "description": "Code Examples App",
+      "weight": 100,
+      "section": true,
+      "skipSize": 89
+    },
+    "files": []
   }
 ]
