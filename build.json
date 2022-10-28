@@ -293,6 +293,18 @@
       "section": true,
       "skipSize": 89
     },
-    "files": []
+    "files": [
+      {
+        "title": "Next App Code Examples",
+        "draft": false,
+        "weight": 3000,
+        "assignment_types": [
+          "assignment"
+        ],
+        "skipSize": 100,
+        "fileName": "1000_App.mdx",
+        "path": "assignment_3/1000_App.mdx"
+      }
+    ]
   }
 ]
