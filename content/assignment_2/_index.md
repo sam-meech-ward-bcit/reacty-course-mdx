@@ -1,6 +1,6 @@
 ---
 title: "Assignment 2"
 description: "Group Project"
-weight: 35
+weight: 1200
 section: true
 ---

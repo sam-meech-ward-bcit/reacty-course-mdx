@@ -100,28 +100,6 @@
   },
   {
     "section": {
-      "title": "Assignment 1",
-      "description": "Mood Tracker",
-      "weight": 15,
-      "section": true,
-      "skipSize": 83
-    },
-    "files": [
-      {
-        "title": "Mood Tracker",
-        "draft": false,
-        "weight": 1000,
-        "assignment_types": [
-          "assignment"
-        ],
-        "skipSize": 90,
-        "fileName": "1000_Mood Tracker.mdx",
-        "path": "assignment_1/1000_Mood Tracker.mdx"
-      }
-    ]
-  },
-  {
-    "section": {
       "title": "Week 2",
       "description": "React Events and State",
       "weight": 20,
@@ -210,28 +188,6 @@
   },
   {
     "section": {
-      "title": "Assignment 2",
-      "description": "Group Project",
-      "weight": 35,
-      "section": true,
-      "skipSize": 84
-    },
-    "files": [
-      {
-        "title": "Group Project Part 1 & 2",
-        "draft": false,
-        "weight": 1000,
-        "assignment_types": [
-          "assignment"
-        ],
-        "skipSize": 102,
-        "fileName": "1000_App.mdx",
-        "path": "assignment_2/1000_App.mdx"
-      }
-    ]
-  },
-  {
-    "section": {
       "title": "Week 5",
       "description": "Next",
       "weight": 50,
@@ -287,11 +243,77 @@
   },
   {
     "section": {
+      "title": "Week 9",
+      "description": "WebSockets",
+      "weight": 120,
+      "section": true,
+      "skipSize": 76
+    },
+    "files": [
+      {
+        "title": "Class Notes",
+        "draft": false,
+        "weight": 1,
+        "assignment_types": [
+          "class_notes"
+        ],
+        "skipSize": 87,
+        "fileName": "01_classNotes.mdx",
+        "path": "week_12/01_classNotes.mdx"
+      }
+    ]
+  },
+  {
+    "section": {
+      "title": "Assignment 1",
+      "description": "Mood Tracker",
+      "weight": 1100,
+      "section": true,
+      "skipSize": 85
+    },
+    "files": [
+      {
+        "title": "Mood Tracker",
+        "draft": false,
+        "weight": 1000,
+        "assignment_types": [
+          "assignment"
+        ],
+        "skipSize": 90,
+        "fileName": "1000_Mood Tracker.mdx",
+        "path": "assignment_1/1000_Mood Tracker.mdx"
+      }
+    ]
+  },
+  {
+    "section": {
+      "title": "Assignment 2",
+      "description": "Group Project",
+      "weight": 1200,
+      "section": true,
+      "skipSize": 86
+    },
+    "files": [
+      {
+        "title": "Group Project Part 1 & 2",
+        "draft": false,
+        "weight": 1000,
+        "assignment_types": [
+          "assignment"
+        ],
+        "skipSize": 102,
+        "fileName": "1000_App.mdx",
+        "path": "assignment_2/1000_App.mdx"
+      }
+    ]
+  },
+  {
+    "section": {
       "title": "Assignment 3",
       "description": "Code Examples App",
-      "weight": 100,
+      "weight": 1300,
       "section": true,
-      "skipSize": 89
+      "skipSize": 90
     },
     "files": [
       {
