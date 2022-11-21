@@ -339,13 +339,13 @@
     },
     "files": [
       {
-        "title": "Next App Code Examples",
+        "title": "pusher",
         "draft": false,
         "weight": 3000,
         "assignment_types": [
           "assignment"
         ],
-        "skipSize": 100,
+        "skipSize": 84,
         "fileName": "1000_App.mdx",
         "path": "assignment_4/1000_App.mdx"
       }
