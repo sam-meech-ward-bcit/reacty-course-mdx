@@ -243,11 +243,11 @@
   },
   {
     "section": {
-      "title": "Week 9",
+      "title": "Week 12",
       "description": "WebSockets",
       "weight": 120,
       "section": true,
-      "skipSize": 76
+      "skipSize": 77
     },
     "files": [
       {
@@ -326,6 +326,28 @@
         "skipSize": 100,
         "fileName": "1000_App.mdx",
         "path": "assignment_3/1000_App.mdx"
+      }
+    ]
+  },
+  {
+    "section": {
+      "title": "Assignment 4",
+      "description": "Pusher",
+      "weight": 1400,
+      "section": true,
+      "skipSize": 79
+    },
+    "files": [
+      {
+        "title": "Next App Code Examples",
+        "draft": false,
+        "weight": 3000,
+        "assignment_types": [
+          "assignment"
+        ],
+        "skipSize": 100,
+        "fileName": "1000_App.mdx",
+        "path": "assignment_4/1000_App.mdx"
       }
     ]
   }
